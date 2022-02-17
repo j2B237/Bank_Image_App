@@ -26,7 +26,7 @@
                             <a class="nav-link" href="#">Illustrations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" >Vidéos</a>
+                            <a class="nav-link" href="#" >Vidéos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Musique</a>
@@ -36,6 +36,19 @@
                         </li>
                     </ul>
                     <div class="d-flex justify-content-between">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Parcourir
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">A propos</a></li>
+                                <li><a class="dropdown-item" href="#">Artistes</a></li>
+                                <li><a class="dropdown-item" href="#">Conditions d'utilisation</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                         <div class="user-profile">
                             <img src="{{ url_for('static', filename='img/user.png') }}" alt="" style="width:30px; height:30px; border-radius:50%;">
                         </div>
