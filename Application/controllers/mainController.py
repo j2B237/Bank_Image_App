@@ -20,7 +20,8 @@ def index():
 def image_page():
     """ Function to render image view """
     year = dt.now().strftime("%Y")
-    return render_template("main/image_page.html", title="Image page", categorie="Images", year=year)
+    img_accueil = "seth-doyle-zf9_yiAekJs-unsplash.jpg"
+    return render_template("main/image_page.html", title="Image page", categorie="Photos", year=year, img=img_accueil)
 
 
 @main.route("/video-view")

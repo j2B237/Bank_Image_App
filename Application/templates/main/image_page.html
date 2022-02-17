@@ -1,0 +1,120 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/andrey-zvyagintsev-_fvUcz1H6EY-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Black futuristic woman</h2>
+              <p>Kampala, Ouganda</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/28.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/annie-spratt-cVEOh_JJmEE-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Enfants souriants</h2>
+              <p>Bamako, Mali</p>
+            </div>
+            <h2 class="card-trip-pricing">XOF 10.000</h2>
+            <img src="{{ url_for('static', filename='img/profile/36.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/chris-zhang-Jq8-3Bmh1pQ-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Appareil photo</h2>
+              <p>Chez moi</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/89.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/clem-onojeghuo-4NAG83bhe6c-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Chrunk danse</h2>
+              <p>Creenshaw, USA</p>
+            </div>
+            <h2 class="card-trip-pricing">$ 15.99</h2>
+            <img src="{{ url_for('static', filename='img/profile/91.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/gideon-hezekiah-57-0lgqwQOY-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Beautiful girl</h2>
+              <p>Abudja, Nigeria</p>
+            </div>
+            <h2 class="card-trip-pricing">XOF 9000</h2>
+            <img src="{{ url_for('static', filename='img/profile/23.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/hans-eiskonen-JuMrIE10_5c-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Artisan</h2>
+              <p>Dakar, Sénégal</p>
+            </div>
+            <h2 class="card-trip-pricing">XOF 5000</h2>
+            <img src="{{ url_for('static', filename='img/profile/7.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <img src="{{ url_for('static', filename='img/victor-nnakwe-AE2uBSYnCVM-unsplash.jpg') }}" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Artisan</h2>
+              <p>Dakar, Sénégal</p>
+            </div>
+            <h2 class="card-trip-pricing">XOF 5000</h2>
+            <img src="{{ url_for('static', filename='img/profile/36.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <a class="btn btn-flat" href="#">
+            <span style="font-size:20px;">Découvrir plus</span>
+        </a>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+<hr class="my-5">
+
+
+{% endblock content %}

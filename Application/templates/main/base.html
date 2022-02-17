@@ -27,7 +27,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Photos</a>
+                                <a class="nav-link active" aria-current="page" href="{{ url_for('main.image_page') }}">Photos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Illustrations</a>
@@ -94,7 +94,7 @@
                             </div>
 
                             <div class="download-btn d-none d-lg-block">
-                                <input type="submit" value="Télécharger" class="btn btn-success btn-rounded py-2">
+                                <input type="submit" value="Télécharger" class="btn btn-flat py-2">
                             </div>
                         </div>
                     </div>
@@ -144,6 +144,8 @@
                     <div class="col-lg-1"></div>
                     <div class="col-lg-10">
                         <p class="text-center text-muted">This site is protected by reCAPTCHA and the Google <a href="" style="text-decoration: none;"> Privacy Policy </a> and <a href="" style="text-decoration: none;"> Terms of Service</a> apply.</p>
+                        <br>
+                        <p class="text-center text-muted">Copyright 2021 - {{ year }}</p>
                     </div>
                     <div class="col-lg-1"></div>
                 </div>
