@@ -10,9 +10,10 @@ from datetime import datetime as dt
 @main.route('/')
 def index():
     """ Function to render the home page view """
+    img_accueil = "video-detail-1.jpg"
     year = dt.now().strftime("%Y")
-    return render_template("main/index.html", title="Flask Bank Image App", categorie="Images",
-                           year=year)
+    return render_template("main/index.html", title="Africa Art & Artists", categorie="Images",
+                           year=year, img=img_accueil)
 
 
 @main.route("/image-view")
