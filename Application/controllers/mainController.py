@@ -1,7 +1,6 @@
 # Local party import
 from Application.controllers import main
 
-
 # Third party import
 from flask import render_template
 from datetime import datetime as dt
@@ -51,4 +50,6 @@ def music_page():
 @main.route("/image/<image_title>")
 def view_image(image_title):
     """" Function to render an image view """
-    return "View of image {}".format(image_title)
+    year = dt.now().strftime("%Y")
+    return render_template("catalogue/view_image.html", title="Afro A&A : {}".format(image_title.replace('-', ' '),
+                                                                                     year=year))
