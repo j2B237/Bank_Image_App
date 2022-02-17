@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}"> <!-- https://fontawesome.com/ -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
@@ -130,7 +130,7 @@
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="{{ url_for('static', filename='img/tn-03.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
+
                                 </a>
                             </div>
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
@@ -155,7 +155,7 @@
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="{{ url_for('static', filename='img/tn-05.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
+
                                 </a>
                             </div>
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
@@ -191,7 +191,6 @@
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="{{ url_for('static', filename='img/tn-08.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
