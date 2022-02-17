@@ -66,7 +66,7 @@
                     <h2 class="tm-welcome-text mb-1 text-white">{{ categorie }} gratuites & payantes à télécharger</h2>
                     <p class="tm-welcome-text mb-5 text-white" style="font-size: 17px;">Découvrez les plus belles créations africaines de haute qualité partagées par notre talentueuse communauté</p>
                     <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
-                        <span>Discover</span>
+                        <span>Découvrir</span>
                     </a>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <div class="row tm-catalog-item-list">
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-01.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-02.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -131,7 +131,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-03.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -144,7 +144,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-04.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -156,7 +156,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-05.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-06.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-07.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-08.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-08.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-09.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <img src="{{ url_for('static', filename='img/tn-09.jpg') }}" alt="Image" class="img-fluid tm-catalog-item-img">
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
@@ -266,8 +266,8 @@
 
     </div> <!-- .tm-page-wrap -->
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script>
         function setVideoSize() {
             const vidWidth = 1920;
