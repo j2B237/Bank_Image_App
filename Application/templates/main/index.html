@@ -6,13 +6,14 @@
 
     <div class="col-lg-4 mb-2">
         <div class="card-trip">
-                <a href="{{ url_for('main.view_image', image_title='Black futuristic woman'.replace(' ', '-'))}}">
-                    <img src="{{ url_for('static', filename='img/andrey-zvyagintsev-_fvUcz1H6EY-unsplash.jpg') }}" />
-                </a>
+                <img src="{{ url_for('static', filename='img/andrey-zvyagintsev-_fvUcz1H6EY-unsplash.jpg') }}" />
               <div class="card-trip-infos">
                 <div>
-                  <h2>Black futuristic woman</h2>
+                    <a href="{{ url_for('main.view_image', image_title='Black futuristic woman'.replace(' ', '-'))}}">
+                    <h2>Black futuristic woman</h2>
                   <p>Kampala, Ouganda</p>
+                    </a>
+
                 </div>
                 <h2 class="card-trip-pricing">Free</h2>
                 <img src="{{ url_for('static', filename='img/profile/28.jpg') }}" class="card-trip-user avatar-bordered" />
