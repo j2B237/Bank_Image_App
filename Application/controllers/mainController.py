@@ -26,7 +26,8 @@ def image_page():
 def video_page():
     """ Function to render video view """
     year = dt.now().strftime("%Y")
-    return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year)
+    artiste = "Youss237"
+    return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year, artiste=artiste)
 
 
 @main.route('/music-view')

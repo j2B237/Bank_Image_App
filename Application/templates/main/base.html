@@ -39,16 +39,16 @@
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
                                             <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="#">Photos <span class="sr-only">(current)</span></a>
+                                                <a class="nav-link tm-nav-link" href="{{url_for('main.index')}}">Photos <span class="sr-only">(current)</span></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">Illustrations</a>
+                                                <a class="nav-link tm-nav-link" href="{{ url_for('main.image_page') }}">Illustrations</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">Vidéos</a>
+                                                <a class="nav-link tm-nav-link" href="{{ url_for('main.video_page') }}">Vidéos</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="contact.html">Musique</a>
+                                                <a class="nav-link tm-nav-link" href="{{ url_for('main.music_page') }}">Musique</a>
                                             </li>
                                         </ul>
                                     </div>
