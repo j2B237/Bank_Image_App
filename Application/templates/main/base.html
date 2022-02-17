@@ -111,13 +111,12 @@
                         <div class="col-lg-6">
                             <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
                                 <div class="search-form-control form-group">
-                                    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+                                    <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Recherher des photos, videos et de la musique"/>
                                 <button name="button" type="submit" class="btn btn-flat">
                                     <i class="fas fa-search"></i> Rechercher
                                 </button>
                                 </div>
                             </form>
-
                         </div>
                         <div class="col-lg-3"></div>
                     </div>
@@ -125,12 +124,11 @@
             </div>
 
             <!-- PAGE CONTENT  -->
-
             <div class="container d-grid gap-3 my-3">
                 {% block content %}{% endblock content %}
             </div>
 
-            <footer class="py-5 my-3">
+            <footer class="py-3 my-2">
                 <div class="row my-3">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-10">
@@ -142,8 +140,8 @@
                     <div class="col-lg-1"></div>
                 </div>
 
-                <div class="footer">
-                    This site is protected by reCAPTCHA and the Google <a href="" style="text-decoration: none;">Privacy Policy</a> and <a href="" style="text-decoration: none;">Terms of Service</a> apply.
+                <div class="footer text-center">
+                    This site is protected by reCAPTCHA and the Google <a href="" style="text-decoration: none;"> Privacy Policy </a> and <a href="" style="text-decoration: none;"> Terms of Service</a> apply.
                 </div>
             </footer>
 
