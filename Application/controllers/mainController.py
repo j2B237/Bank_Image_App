@@ -46,3 +46,9 @@ def music_page():
     year = dt.now().strftime("%Y")
     img_accueil = "seth-doyle-zf9_yiAekJs-unsplash.jpg"
     return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year, img=img_accueil)
+
+
+@main.route("/image/<image_title>")
+def view_image(image_title):
+    """" Function to render an image view """
+    return "View of image {}".format(image_title)
