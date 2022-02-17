@@ -24,15 +24,25 @@ def image_page():
     return render_template("main/image_page.html", title="Image page", categorie="Photos", year=year, img=img_accueil)
 
 
+@main.route('/illustration-view')
+def illustration_page():
+    """ Function to render illustration view """
+    year = dt.now().strftime("%Y")
+    img_accueil = "seth-doyle-zf9_yiAekJs-unsplash.jpg"
+    return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year, img=img_accueil)
+
+
 @main.route("/video-view")
 def video_page():
     """ Function to render video view """
     year = dt.now().strftime("%Y")
-    artiste = "Youss237"
-    return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year, artiste=artiste)
+    img_accueil = "paul-zoetemeijer-ekBOf6sJYYo-unsplash.jpg"
+    return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year, img=img_accueil)
 
 
 @main.route('/music-view')
 def music_page():
     """ Function to render music view """
-    return "Music page view "
+    year = dt.now().strftime("%Y")
+    img_accueil = "seth-doyle-zf9_yiAekJs-unsplash.jpg"
+    return render_template("main/video_page.html", title="Video page", categorie="Vidéos", year=year, img=img_accueil)

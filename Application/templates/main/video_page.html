@@ -1,0 +1,106 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+            <video autoplay muted loop id="tm-video">
+            <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                <source src="{{ url_for('static', filename='video/1496390526.mp4') }}" type="video/mp4">
+            </video>
+          <div class="card-trip-infos">
+            <div>
+              <h2>Homme joyeux</h2>
+              <p>Marché Rabat, Maroc</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/66.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <video autoplay muted loop width="300" height="200">
+                <source src="{{ url_for('static', filename='video/2225414315.mp4') }}" type="video/mp4">
+            </video>
+          <div class="card-trip-infos">
+            <div>
+              <h2>Vidéo Papa noel</h2>
+              <p>Miami beach</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/23.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <video autoplay muted loop height="200" width="300">
+                <source src="{{ url_for('static', filename='video/2644704550.mp4') }}" type="video/mp4">
+            </video>
+          <div class="card-trip-infos">
+            <div>
+              <h2>Voyage d'une étoile</h2>
+              <p>NASA</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/50.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <video autoplay muted loop height="200" width="300">
+                <source src="{{ url_for('static', filename='video/1528745532.mp4') }}" type="video/mp4">
+            </video>
+          <div class="card-trip-infos">
+            <div>
+              <h2>Voyage d'une étoile</h2>
+              <p>NASA</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/54.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-2">
+        <div class="card-trip">
+          <video autoplay muted loop height="200" width="300">
+                <source src="{{ url_for('static', filename='video/2323657856.mp4') }}" type="video/mp4">
+            </video>
+          <div class="card-trip-infos">
+            <div>
+              <h2>Voyage d'une étoile</h2>
+              <p>NASA</p>
+            </div>
+            <h2 class="card-trip-pricing">Free</h2>
+            <img src="{{ url_for('static', filename='img/profile/91.jpg') }}" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <a class="btn btn-flat" href="#">
+            <span style="font-size:20px;">Découvrir plus</span>
+        </a>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+<hr class="my-5">
+
+
+
+{% endblock content %}
