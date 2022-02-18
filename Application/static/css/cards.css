@@ -16,11 +16,6 @@
   object-fit: cover;
 }
 
-card-trip-small > img {
-  height: 50px;
-  width: 100%;
-  object-fit: cover;
-}
 
 .card-trip h2 {
   font-size: 16px;
