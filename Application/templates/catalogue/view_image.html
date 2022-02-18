@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="row py-3 my-3">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
             <div class="card-trip card-trip-large">
                 <img src="{{ url_for('static', filename='img/andrey-zvyagintsev-_fvUcz1H6EY-unsplash.jpg') }}" />
                 <div class="card-trip-infos">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card-category mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( {{ url_for('static', filename='img/victor-nnakwe-AE2uBSYnCVM-unsplash.jpg') }} )">
-                        Voir +
+                        <a href="" style="text-decoration:none; color:white;">Voir +</a>
                     </div>
                 </div>
             </div>
@@ -88,6 +88,46 @@
 
             </div>
         </div>
-        <div class="col-lg-4"></div>
+
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="{{ url_for('static', filename='img/profile/28.jpg') }}" class="avatar-bordered-lg ms-3" />
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="text-muted">ThanhTN / 33 images</h6>
+                    <div class="row my-3">
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-6">
+                            <a href="" class="btn btn-flat mb-2">Café</a>
+                        </div>
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-6">
+                            <a href="" class="btn btn-ghost mb-2">Suivre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="tex-muted my-2">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="" class="btn btn-primary btn-sm my-1">
+                        <span class="iconify" data-icon="ant-design:like-outlined"></span>
+                        34
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="" class="btn btn-primary btn-sm my-1">
+                        <span class="iconify" data-icon="ep:collection-tag"></span>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="" class="btn btn-secondary btn-sm my-1">
+                        <span class="iconify" data-icon="bi:share"></span>
+                    </a>
+                </div>
+            </div>
+            <hr class="tex-muted my-2">
+        </div>
     </div>
 {% endblock content %}
