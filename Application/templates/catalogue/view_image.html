@@ -45,11 +45,11 @@
                 <div class="col-lg-12 my-2">
                     <form action="" method="post">
                         <div class="form-group">
-                            <div class="row">
-                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 d-none d-md-block d-lg-block">
+                            <div class="row row-cols-auto">
+                                <div class="col-2">
                                     <img src="{{ url_for('static', filename='img/user.png') }}" alt="" class="avatar-bordered">
                                 </div>
-                                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                                <div class="col-10">
                                     <textarea cols="30" rows="2" class="form-control" placeholder="Ajouter votre commentaire"></textarea>
                                 </div>
                             </div>
@@ -92,31 +92,28 @@
         <div class="col-lg-1"></div>
 
         <hr class="my-2 d-block d-lg-none">
+
         <div class="col-lg-4">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="row">
-                        <div class="col">
-                            <img src="{{ url_for('static', filename='img/profile/28.jpg') }}" class="avatar-bordered-lg" />
-                        </div>
-                        <div class="col">
-                            <p class="text-muted">ThanhTN / 33 images</p>
-                        </div>
-                    </div>
+            <div class="row row-col-auto">
+                <div class="col-4">
+                    <img src="{{ url_for('static', filename='img/profile/28.jpg') }}" class="avatar-bordered-lg" />
                 </div>
-                <div class="col-lg-6">
-                    <div class="row my-3">
-                        <div class="col-6">
-                            <a href="" class="btn btn-flat mb-2">Café</a>
-                        </div>
-                        <div class="col-6">
-                            <a href="" class="btn btn-ghost mb-2">Suivre</a>
-                        </div>
-                    </div>
+                <div class="col-6">
+                    <p class="text-muted">ThanhTN / 33 images</p>
                 </div>
             </div>
+            <div class="row row-cols-auto my-2">
+                <div class="col">
+                    <a href="" class="btn btn-flat mb-2">Café</a>
+                </div>
+                <div class="col">
+                    <a href="" class="btn btn-ghost mb-2">Suivre</a>
+                </div>
+            </div>
+
+
             <hr class="tex-muted my-2">
-            <div class="row">
+            <div class="row row-cols-auto">
                 <div class="col">
                     <a href="" class="btn btn-primary btn-sm my-1">
                         <span class="iconify" data-icon="ant-design:like-outlined"></span>
