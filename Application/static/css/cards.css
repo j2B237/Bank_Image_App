@@ -10,6 +10,18 @@
   object-fit: cover;
 }
 
+.card-trip-large > img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+card-trip-small > img {
+  height: 50px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
@@ -36,4 +48,19 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }

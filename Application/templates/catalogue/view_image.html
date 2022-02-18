@@ -1,6 +1,44 @@
 {% extends "catalogue/base.html" %}
 
 {% block content %}
+    <div class="row py-3 my-3">
+        <div class="col-lg-8">
+            <div class="card-trip card-trip-large">
+                <img src="{{ url_for('static', filename='img/andrey-zvyagintsev-_fvUcz1H6EY-unsplash.jpg') }}" />
+                <div class="card-trip-infos">
+                    <div>
+                        <h2>Black futuristic woman</h2>
+                        <p>Kampala, Ouganda</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted my-3">
+                images sponsorisées par 3A
+            </p>
 
-
+            <div class="row my-3">
+                <div class="col-lg-3">
+                    <div class="card-trip card-trip-small">
+                        <img src="{{ url_for('static', filename='img/hans-eiskonen-JuMrIE10_5c-unsplash.jpg') }}" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card-trip card-trip-small">
+                        <img src="{{ url_for('static', filename='img/gideon-hezekiah-57-0lgqwQOY-unsplash.jpg') }}" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card-trip card-trip-small">
+                        <img src="{{ url_for('static', filename='img/nathaniel-tetteh-L1yrcSE_KWc-unsplash.jpg') }}" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( {{ url_for('static', filename='img/victor-nnakwe-AE2uBSYnCVM-unsplash.jpg') }} )">
+                        Voir +
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
 {% endblock content %}
